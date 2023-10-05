@@ -8,7 +8,7 @@
             flex: 1 1 auto;
             padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
             color: white;
-            min-height: 200px;
+            min-height: 150px;
             background-color: #3ea4ed;
             font-size: 35px;
         }
@@ -16,7 +16,7 @@
             flex: 1 1 auto;
             padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
             color: white;
-            min-height: 200px;
+            min-height: 150px;
             background-color: #f3d652;
             font-size: 35px;
         }
@@ -24,7 +24,7 @@
             flex: 1 1 auto;
             padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
             color: white;
-            min-height: 200px;
+            min-height: 150px;
             background-color: #ff7a81;
             font-size: 35px;
         }
@@ -127,7 +127,7 @@
             </div>
         </div>
     </div>
-    <div class="row mt-3">
+    <div class="row mt-5">
         <div class="col-md-8">
             <canvas id="lineChart"></canvas>
         </div>
@@ -146,13 +146,13 @@
             {
                 label: 'Số đơn bán',
                 data: [50, 60, 70, 80, 90],
-                borderColor: 'blue',
+                borderColor: 'pink',
                 fill: false,
             },
             {
                 label: 'Doanh thu',
                 data: [200, 250, 300, 350, 400],
-                borderColor: 'green',
+                borderColor: '#3ea4ed',
                 fill: false,
             },
         ],
@@ -164,7 +164,7 @@
         datasets: [
             {
                 data: [800, 200],
-                backgroundColor: ['green', 'red'],
+                backgroundColor: ['#3ea4ed', 'pink'],
             },
         ],
     };
