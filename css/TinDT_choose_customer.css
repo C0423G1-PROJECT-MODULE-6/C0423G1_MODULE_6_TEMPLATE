@@ -1,0 +1,15 @@
+.tbl-content{
+    height:250px;
+}
+ .table-layout {
+     table-layout: fixed;
+     width: 100%;
+     background: whitesmoke;
+ }
+
+ td,th {
+    text-align: left;
+    word-wrap: break-word;
+     }
+
+
