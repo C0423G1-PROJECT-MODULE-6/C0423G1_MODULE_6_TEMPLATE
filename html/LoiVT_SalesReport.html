@@ -22,7 +22,8 @@
                         Admin
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="NguyenNH_customer_management.html">Quản Lý Nhân Viên</a></li>
+                        <li><a class="dropdown-item" href="PhuocLQ_EmployeeList.html">Quản Lý Nhân Viên</a></li>
+                        <li><a class="dropdown-item" href="NguyenNH_customer_management.html">Quản Lý Báo Cáo Khách Hàng</a></li>
                     </ul>
                 </li>
             </ul>
@@ -32,7 +33,7 @@
                         Kinh Doanh
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="LoiVT_SalesReport.html">Quản Lý Báo Cáo</a></li>
+                        <li><a class="dropdown-item" href="LoiVT_SalesReport.html">Quản Lý Báo Cáo Doanh Thu</a></li>
                         <li><a class="dropdown-item" href="QuanND_Product_List.html">Xem Thông Tin Hàng Hoá</a></li>
                         <li><a class="dropdown-item" href="ThienPT_supplierList.html">Quản Lý Nhà Cung Cấp</a></li>
                     </ul>
@@ -74,10 +75,12 @@
         </div>
     </div>
 </nav>
-<h1 style="text-align:center">Báo Cáo Doanh Thu</h1>
+
 <div class="container mt-5">
     <div class="row">
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h1 style="text-align:center; margin-top: 5%">Báo Cáo Doanh Thu</h1>
+        </div>
         <div class="col-md-2">
             <label for="startDate">Ngày Bắt Đầu:</label>
             <input type="date" id="startDate" class="form-control">
@@ -95,7 +98,7 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-lg-11">
+        <div class="col-lg-12">
             <canvas id="myChart"></canvas>
         </div>
     </div>
