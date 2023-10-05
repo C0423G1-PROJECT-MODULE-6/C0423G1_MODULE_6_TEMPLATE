@@ -13,7 +13,73 @@
   </head>
 
   <body>
-    <div class="modal-body">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="HaiBH_Home_Admin.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="NguyenNH_customer_management.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admin
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="PhuocLQ_EmployeeList.html">Quản Lý Nhân Viên</a></li>
+              <li><a class="dropdown-item" href="NguyenNH_customer_management.html">Quản Lý Báo Cáo Khách Hàng</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kinh Doanh
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="LoiVT_SalesReport.html">Quản Lý Báo Cáo Doanh Thu</a></li>
+              <li><a class="dropdown-item" href="QuanND_Product_List.html">Xem Thông Tin Hàng Hoá</a></li>
+              <li><a class="dropdown-item" href="ThienPT_supplierList.html">Quản Lý Nhà Cung Cấp</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="ThoiND_sale_management.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bán Hàng
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="ThoiND_sale_management.html">Quản Lý Bán Hàng</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="PhapTM_warehouse.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Thủ Kho
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="PhapTM_warehouse.html">Quản Lý Xuất/Nhập Kho</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse" style="margin-left: auto; width: 0">
+        <ul class="navbar-nav" style="margin-left: auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="HaiBH_Infomation.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bùi Hữu Hải - Admin
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="HaiBH_Infomation.html">Thông Tin Cá Nhân</a></li>
+              <li><a class="dropdown-item" href="HaiBH_Login.html">Đăng Xuất</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="modal-body" style="margin-top: 2%;">
       <div class="p-3">
         <div class="mx-auto p-3" style="width: 95%">
           <div class="row g-3 align-items-center justify-content-center">
@@ -153,22 +219,22 @@
       <div class="row col-12 mx-auto">
         <div class="col-6 p-3">
           <div style="margin-left: 10%">
-            <button
+            <a href="CaoNV_EmployeeCreate.html"><button
               type="button"
               class="btn btn-outline-primary"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               Thêm
-            </button>
-            <button
+            </button></a>
+            <a href="CaoNV_EmployeeEdit.html"><button
               type="button"
               class="btn btn-outline-warning"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               Cập nhập
-            </button>
+            </button></a>
             <button
               type="button"
               class="btn btn-outline-danger"
