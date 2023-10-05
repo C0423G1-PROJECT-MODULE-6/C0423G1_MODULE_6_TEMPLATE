@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lịch sử mua hàng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+    <style>
+
+
+        body {
+            padding: 20px;
+        }
+
+        .form-input label {
+            /*font-weight: bold;*/
+        }
+
+        .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            height: auto;
+        }
+
+        .form-select {
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .bottom {
+            display: flex;
+            align-content: center;
+        }
+        td,th,tr {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div>
+        <div class="container mt-5">
+
+            <div class="row col-12 d-flex">
+                <div class="col">
+                    <h3>Thông tin khách hàng</h3>
+                </div>
+            </div>
+            <table class="border border-dark table table-hover table-striped table-layout">
+                <thead>
+                <tr>
+                    <th>Họ và tên</th>
+                    <th>Giới tính</th>
+                    <th>Tuổi</th>
+                    <th>Địa chỉ email</th>
+                    <th>Số điện thoại</th>
+                    <th>Số lần mua hàng</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Nguyễn Nữ</td>
+                    <td>Nữ</td>
+                    <td>20</td>
+                    <td>nguyennu@gmail.com</td>
+                    <td>0123456789</td>
+                    <td>5</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container mt-5">
+
+            <div class="row col-12 d-flex mb-2">
+                <div class="col">
+                    <h3>Chi tiết lịch sử mua hàng</h3>
+                </div>
+                <div class="col-auto d-flex float-end">
+
+                    <div class="col-auto mx-2">
+                        <input class="form-control me-2" type="search" placeholder="nhập tên sản phẩm" aria-label="Search">
+                    </div>
+                    <div class="col-auto mx-2">
+                        <button class="btn btn-outline-primary me-2 text-center" type="button">Tìm kiếm</button>
+                    </div>
+                </div>
+            </div>
+            <table class="border border-dark table table-hover table-striped table-layout">
+                <thead>
+                <tr>
+                    <th>Stt</th>
+                    <th>Ngày mua</th>
+                    <th>Sản phẩm mua</th>
+                    <th>Số tiền</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>12/12/2018</td>
+                    <td>Samsung Galaxy</td>
+                    <td>15.000.000 vnd</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>12/06/2019</td>
+                    <td>Samsung A7</td>
+                    <td>13.000.000 vnd</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>12/01/2021</td>
+                    <td>Samsung J7</td>
+                    <td>10.000.000 vnd</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>12/09/2023</td>
+                    <td>Samsung Note7</td>
+                    <td>20.000.000 vnd</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>12/10/2023</td>
+                    <td>Iphone 15 titan</td>
+                    <td>35.000.000 vnd</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-auto ms-auto">
+                    <nav class="bottom" aria-label="Page navigation">
+                        <ul class="pagination mb-0 me-2">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trước</a>
+                            </li>
+                            <li class="page-item" aria-current="page">
+                                <a class="page-link" href="#">1/10</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">sau</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary me-4 text-center" type="button">Quay lại</button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
