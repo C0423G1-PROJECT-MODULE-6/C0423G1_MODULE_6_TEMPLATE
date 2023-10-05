@@ -11,10 +11,7 @@
             border: 1px solid black;
             padding: 20px;
             border-radius: 20px;
-        }
-
-        .form-btn {
-            width: 600px;
+            margin-top: 5%;
         }
 
         .form-input {
@@ -129,7 +126,9 @@
             </legend>
             <div class="row">
                 <div class="col-8 mt-3">
-                    <button class="btn btn-outline-primary float-start mx-1 mt-2 shadow">
+                    <button type="button" class="btn btn-outline-primary float-start mx-1 mt-2 shadow"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModalProduct">
                         Chọn hàng hóa đã từng nhập kho
                     </button>
                 </div>
@@ -190,7 +189,8 @@
         </div>
     </form>
 </div>
-<!-- modal -->
+
+<!-- modal chọn ncc -->
 
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class=" modal-dialog modal-lg ">
@@ -355,6 +355,171 @@
 </div>
 
 <!-- modal -->
+<!--Tin DT-->
+<div class="modal fade " id="exampleModalProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class=" modal-dialog modal-xl ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalProductLabel">Chọn sản phẩm</h1>
+            </div>
+            <div class="modal-body">
+                <div class="p-3">
+                    <div class="row g-3 align-items-center justify-content-end" style="margin-right:3%">
+                        <div class="col-auto">
+                            <h1 for="inputPassword6" class="col-form-label">Tìm kiếm theo</h1>
+                        </div>
+                        <div class="col-auto">
+                            <select class="form-select shadow border-dark">
+
+                                <option value="1">Tên sản phẩm</option>
+                                <option value="2">Loại sản phẩm</option>
+                            </select>
+                        </div>
+
+                        <div class="col-auto">
+                            <input type="text" id="inputPassword61" class="form-control shadow border-dark"
+                                   aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-outline-primary text-center shadow ">Tìm kiếm</button>
+                        </div>
+                    </div>
+                    <div class="mx-auto p-3 " style="width: 95%">
+                        <table class="border border-dark shadow table table-hover table-striped-columns table-layout tbl-content"
+
+                               style="margin-bottom: 0rem">
+                            <tr>
+                                <th style="width: 15%">
+                                    #
+                                </th>
+                                <th style="width: 30%">Tên</th>
+                                <th style="width: 25%">Giá</th>
+                                <th style="width: 19%">CPU</th>
+                                <th style="width: 20%">Lưu trữ</th>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    1
+                                </td>
+                                <td style="width: 30%">
+                                    Sam Sung Galaxy S21 4GB-250GB
+                                </td>
+                                <td style="width: 25%">
+                                    23.190.000
+                                </td>
+                                <td style="width: 19%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 20%">
+                                    250 GB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    2
+                                </td>
+                                <td style="width: 30%">
+                                    Iphone 13 Promax 8GB-125GB
+                                </td>
+                                <td style="width: 25%">
+                                    16.190.000
+                                </td>
+                                <td style="width: 19%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 20%">
+                                    125 GB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    3
+                                </td>
+                                <td style="width: 30%">
+                                    Nokia G10 4GB-64GB
+                                </td>
+                                <td style="width: 25%">
+                                    3.190.000
+                                </td>
+                                <td style="width: 19%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 20%">
+                                    64 GB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    4
+                                </td>
+                                <td style="width: 30%">
+                                    Nokia G10 4GB-64GB
+                                </td>
+                                <td style="width: 25%">
+                                    3.190.000
+                                </td>
+                                <td style="width: 19%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 20%">
+                                    64 GB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    5
+                                </td>
+                                <td style="width: 30%">
+                                    Nokia G10 4GB-64GB
+                                </td>
+                                <td style="width: 25%">
+                                    3.190.000
+                                </td>
+                                <td style="width: 19%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 20%">
+                                    64 GB
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <div class="row col-12 mx-auto">
+                    <div class="col-6 p-3">
+                        <div style="margin-left: 10%">
+                            <button class=" btn btn-outline-primary shadow" style="margin-right: 2rem;width: 40%">
+                                Chọn
+                            </button>
+                            <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal"
+                                    style="width: 40%">
+
+                                Hủy
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div class="float-end " style="margin-right: 10%">
+                            <nav aria-label="Page navigation example ">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link text-dark" href="#">Trước</a></li>
+                                    <li class="page-item"><a class="page-link text-dark" href="#">1/2</a></li>
+
+                                    <li class="page-item"><a class="page-link text-dark" href="#">Sau</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
