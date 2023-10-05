@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .card-body-order-number {
+            flex: 1 1 auto;
+            padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+            color: white;
+            min-height: 200px;
+            background-color: #3ea4ed;
+            font-size: 35px;
+        }
+        .card-body-revenue {
+            flex: 1 1 auto;
+            padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+            color: white;
+            min-height: 200px;
+            background-color: #f3d652;
+            font-size: 35px;
+        }
+        .card-body-targets {
+            flex: 1 1 auto;
+            padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+            color: white;
+            min-height: 200px;
+            background-color: #ff7a81;
+            font-size: 35px;
+        }
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -73,7 +101,90 @@
         </div>
     </div>
 </nav>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body-order-number">
+                    <h5 class="card-title">Số đơn bán trong ngày</h5>
+                    <p class="card-text">100.000.000 VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body-revenue">
+                    <h5 class="card-title">Doanh thu trong ngày</h5>
+                    <p class="card-text">100.000.000 VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body-targets">
+                    <h5 class="card-title">Chỉ tiêu tháng</h5>
+                    <p class="card-text">100.000.000 VND</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-8">
+            <canvas id="lineChart"></canvas>
+        </div>
+        <div class="col-md-4">
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+</div>
 
+
+<script>
+    // Data for line chart
+    const lineChartData = {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+        datasets: [
+            {
+                label: 'Số đơn bán',
+                data: [50, 60, 70, 80, 90],
+                borderColor: 'blue',
+                fill: false,
+            },
+            {
+                label: 'Doanh thu',
+                data: [200, 250, 300, 350, 400],
+                borderColor: 'green',
+                fill: false,
+            },
+        ],
+    };
+
+    // Data for pie chart
+    const pieChartData = {
+        labels: ['Doanh thu đã đạt được', 'Chưa đạt chỉ tiêu'],
+        datasets: [
+            {
+                data: [800, 200],
+                backgroundColor: ['green', 'red'],
+            },
+        ],
+    };
+
+    // Create line chart
+    const lineChartCtx = document.getElementById('lineChart').getContext('2d');
+    const lineChart = new Chart(lineChartCtx, {
+        type: 'line',
+        data: lineChartData,
+    });
+
+    // Create pie chart
+    const pieChartCtx = document.getElementById('pieChart').getContext('2d');
+    const pieChart = new Chart(pieChartCtx, {
+        type: 'pie',
+        data: pieChartData,
+    });
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
