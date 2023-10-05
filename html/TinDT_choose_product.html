@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chọn sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/TinDT_choose_customer.css">
+</head>
+<body>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Chọn sản phẩm
+</button>
+
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class=" modal-dialog modal-xl ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalLabel">Chọn sản phẩm</h1>
+            </div>
+            <div class="modal-body">
+                <div class="p-3">
+                    <div class="row g-3 align-items-center justify-content-end" style="margin-right:3%">
+                        <div class="col-auto">
+                            <h1 for="inputPassword6" class="col-form-label">Tìm kiếm theo</h1>
+                        </div>
+                        <div class="col-auto">
+                            <select class="form-select border-dark">
+                                <option value="1">Tên sản phẩm</option>
+                                <option value="2">Loại sản phẩm</option>
+                            </select>
+                        </div>
+
+                        <div class="col-auto">
+                            <input type="text" id="inputPassword6" class="form-control border-dark"
+                                   aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-outline-primary text-center  ">Tìm kiếm</button>
+                        </div>
+                    </div>
+                    <div class="mx-auto p-3 " style="width: 95%">
+                        <table class="border border-dark table table-hover table-striped-columns table-layout tbl-content"
+                               style="margin-bottom: 0rem">
+                            <tr>
+                                <th style="width: 15%">
+                                    #
+                                </th>
+                                <th style="width: 30%">Tên</th>
+                                <th style="width: 25%">Giá</th>
+                                <th style="width: 24%">CPU</th>
+                                <th style="width: 15%">Lưu trữ</th>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    1
+                                </td>
+                                <td style="width: 30%">
+                                    Sam Sung Galaxy S21 4GB-250GB
+                                </td>
+                                <td style="width: 25%">
+                                    23.190.000
+                                </td>
+                                <td style="width: 25%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 15%">
+                                    250 GB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    2
+                                </td>
+                                <td style="width: 30%">
+                                    Iphone 13 Promax 8GB-125GB
+                                </td>
+                                <td style="width: 25%">
+                                    16.190.000
+                                </td>
+                                <td style="width: 25%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 15%">
+                                    125 GB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    3
+                                </td>
+                                <td style="width: 30%">
+                                    Nokia G10 4GB-64GB
+                                </td>
+                                <td style="width: 25%">
+                                    3.190.000
+                                </td>
+                                <td style="width: 25%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 15%">
+                                    64 GB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    4
+                                </td>
+                                <td style="width: 30%">
+                                    Nokia G10 4GB-64GB
+                                </td>
+                                <td style="width: 25%">
+                                    3.190.000
+                                </td>
+                                <td style="width: 25%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 15%">
+                                    64 GB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 15%">
+                                    5
+                                </td>
+                                <td style="width: 30%">
+                                    Nokia G10 4GB-64GB
+                                </td>
+                                <td style="width: 25%">
+                                    3.190.000
+                                </td>
+                                <td style="width: 25%">
+                                    SCT 301
+                                </td>
+                                <td style="width: 15%">
+                                    64 GB
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <div class="row col-12 mx-auto">
+                    <div class="col-6 p-3">
+                        <div style="margin-left: 10%">
+                            <button class=" btn btn-outline-primary" style="margin-right: 2rem;width: 40%">
+                                Chọn
+                            </button>
+                            <button class=" btn btn-outline-secondary" data-bs-dismiss="modal" style="width: 40%">
+                                Hủy
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div class="float-end" style="margin-right: 10%">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link text-dark" href="#">Trước</a></li>
+                                    <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link text-dark" href="#">Sau</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
