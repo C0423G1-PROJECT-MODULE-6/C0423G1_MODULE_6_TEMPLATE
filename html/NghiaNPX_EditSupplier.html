@@ -8,14 +8,14 @@
 </head>
 <body>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#NghiaNPX_CreateSupplier">
     Chỉnh sửa nhà cung cấp
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+<div class="modal fade" id="NghiaNPX_CreateSupplier" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Chỉnh sửa nhà cung cấp</h1>
@@ -24,38 +24,38 @@
             <div class="modal-body">
                 <form>
                     <div class="mb-3 row">
-                        <label for="code" class="col-sm-3 col-form-label">MS</label>
+                        <label for="code" class="col-sm-3 col-form-label">MS <span class="text-danger">*</span></label>
                         <div class="col-sm-9">
-                            <input type="text" readonly class="form-control" id="code">
+                            <input type="text" class="form-control shadow mt-2 border border-dark" id="code" value="201625">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="supplierName" class="col-sm-3 col-form-label">Tên nhà chung cấp</label>
+                        <label for="supplierName" class="col-sm-3 col-form-label">Tên nhà chung cấp <span class="text-danger">*</span></label>
                         <div class="col-sm-9">
-                            <input type="password" class="form-control" id="supplierName">
+                            <input type="text" class="form-control shadow mt-2 border border-dark" id="supplierName" value="Công ty TNHH Hoàng Hà">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="address" class="col-sm-3 col-form-label">Địa chỉ</label>
+                        <label for="address" class="col-sm-3 col-form-label">Địa chỉ <span class="text-danger">*</span></label>
                         <div class="col-sm-9">
-                            <select class="form-select" aria-label="Default select example" id="address">
+                            <select class="form-select shadow mt-2 border border-dark" aria-label="Default select example" id="address">
                                 <option selected>Chọn địa chỉ</option>
-                                <option value="1">Hồ Chí Minh</option>
+                                <option value="1" selected>Hồ Chí Minh</option>
                                 <option value="2">Hà Nội</option>
                                 <option value="3">Đà Nẵng</option>
                             </select>
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="phoneNumber" class="col-sm-3 col-form-label">SĐT</label>
+                        <label for="phoneNumber" class="col-sm-3 col-form-label">SĐT <span class="text-danger">*</span></label>
                         <div class="col-sm-9">
-                            <input type="password" class="form-control" id="phoneNumber">
+                            <input type="text" class="form-control shadow mt-2 border border-dark" id="phoneNumber" value="0913607999">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="email" class="col-sm-3 col-form-label">E-mail</label>
+                        <label for="email" class="col-sm-3 col-form-label">E-mail <span class="text-danger">*</span></label>
                         <div class="col-sm-9">
-                            <input type="password" class="form-control" id="email">
+                            <input type="text" class="form-control shadow mt-2 border border-dark" id="email" value="hoangha@gmail.com">
                         </div>
                     </div>
                 </form>
@@ -64,10 +64,10 @@
                 <div class="row col-12 mx-auto">
                     <div class="col-6">
                         <div style="margin-left: 10%">
-                            <button class=" btn btn-outline-primary" style="margin-right: 1rem; width: 25%">
+                            <button class=" btn btn-outline-primary shadow" style="margin-right: 1rem; width: 25%">
                                 Lưu
                             </button>
-                            <button class=" btn btn-outline-secondary" data-bs-dismiss="modal">
+                            <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal">
                                 Quay về
                             </button>
                         </div>
