@@ -1,0 +1,233 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15985,15991,15996,30126,30124,30132");
+
+:root {
+  /* Color */
+  --header-footer-color: #101010;
+  --main-background: #3e3e3f;
+  --product-background: #323232;
+  --circle-background: #2f3033;
+  --circle-background-hover: #5e5e60;
+  --text-color: #fff;
+  --sub-text-color: #afb7bd;
+  --button-background: #222324;
+  --button-background-hover: #1c1c1d;
+  --button-border-hover: 1px solid #535353;
+
+  /* Box-shadow */
+  --box-shadow-small: -4px -4px 8px rgba(134, 134, 134, 0.2),
+    4px 4px 8px rgba(28, 28, 28, 0.4);
+  --box-shadow-medium: 9px 9px 16px rgba(0, 0, 0, 0.44),
+    -9px -9px 16px rgba(83, 83, 86, 0.8);
+
+  /* Font-size */
+  --font-size-for-price: 18px;
+  --font-weigh-for-price: 700;
+  --font-size-for-text: 14px;
+  /* Transition */
+  --transition-02: all 0.25s ease;
+  --transition-03: all 0.35s ease;
+  --transition-04: all 0.45s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: var(--font-size-for-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+p,
+span,
+small {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--header-footer-color);
+  width: 100%;
+  height: 60px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  background-color: var(--main-background);
+}
+.logo {
+  width: auto;
+  height: 70px;
+}
+.logo-bottom {
+  margin-left: -10px;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.menu li {
+  text-align: center;
+  width: 120px;
+}
+ul li .link span {
+  font-weight: 500;
+}
+ul li .link {
+  display: inline-block;
+  border-radius: 4px;
+  width: 120px;
+  padding: 16px 20px;
+  transition: var(--transition-02);
+  overflow: hidden;
+}
+ul li .link:hover {
+  overflow: hidden;
+  background-color: var(--circle-background);
+  border-radius: 4px;
+}
+
+.search-login {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.header-search,
+.header-login {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--circle-background);
+  transform: var(--transition-02);
+}
+.header-search:hover {
+  background-color: var(--circle-background-hover);
+}
+.header-login:hover {
+  background-color: var(--circle-background-hover);
+}
+.search-icon,
+.login-icon {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-block {
+  width: 100%;
+  min-height: 500px;
+  margin: 30px 0;
+}
+.facebook-icon,
+.instagram-icon,
+.twitter-icon {
+  position: relative;
+  display: inline-block;
+  background-color: var(--circle-background);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.facebook-icon i,
+.instagram-icon i,
+.twitter-icon i {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.facebook-icon:hover,
+.instagram-icon:hover,
+.twitter-icon:hover {
+  background-color: var(--circle-background-hover);
+  z-index: 1;
+}
+.footer {
+  background-color: var(--header-footer-color);
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  border-bottom: #888 solid 1px;
+  justify-content: space-between;
+}
+.footer-content div {
+  line-height: 2;
+}
+.connect-with-us {
+  color: #888;
+}
+h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer-content p {
+  font-size: 13px;
+}
+.footer-container {
+  margin: 0 150px;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #888;
+  margin-top: 15px;
+}
+
+.categories {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 150px;
+  gap: calc((100% - 900px) / 4);
+}
+.category-item {
+  width: 180px;
+  height: 220px;
+  background-color: var(--product-background);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.category-item:hover {
+  box-shadow: var(--box-shadow-small);
+}
+.category-item:hover .category-image {
+  scale: 1.1;
+}
+.category-image {
+  transition: var(--transition-02);
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+}
+.category-name {
+  display: block;
+  text-align: center;
+}
