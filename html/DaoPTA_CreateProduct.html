@@ -27,45 +27,26 @@
             border-radius: 20px;
         }
 
-        .form-btn {
-            width: 600px;
-        }
-
-        body {
-            padding: 20px;
-        }
-
         .form-input {
             background-color: #f8f9fa;
             padding: 20px;
             border-radius: 20px;
             margin-bottom: 20px;
         }
-
-        .form-input label {
-            /*font-weight: bold;*/
-        }
-
-        .form-control {
+        .form-control-1 {
             border: 1px solid #ced4da;
             border-radius: 5px;
             height: auto;
         }
-
-        .form-select {
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-        }
-
         span {
             color: red;
         }
     </style>
 </head>
 <body>
-<div class="row p-2">
+<div class="row p-2 mt-3 container" style="margin-left: 90px">
 
-    <div class="col-4 justify-content-center container ">
+    <div class="col-6 justify-content-center ">
         <form action="" >
             <fieldset class="form-input shadow" style="width: 600px; height: 480px">
                 <legend class="float-none w-auto px-3">
@@ -78,7 +59,7 @@
         </form>
     </div>
 
-    <div class="d-flex justify-content-center col-8 container">
+    <div class="d-flex justify-content-center col-6  float-end">
         <form>
             <fieldset class="form-input shadow">
                 <legend class="float-none w-auto px-3">
@@ -90,7 +71,7 @@
                         <label>Tên hàng <span>*</span> </label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="text"/>
+                        <input class="form-control-1 mt-2 border border-dark" type="text" style="height: 37.6px; width: 353.6px"/>
                         <small class="p-3 mb-2 text-danger">Error </small>
                     </div>
 
@@ -98,12 +79,12 @@
                         <label>Giá <span>*</span> </label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="number"/>
+                        <input class="form-control-1 mt-2 border border-dark" type="number" style="height: 37.6px; width: 353.6px"/>
                         <small class="p-3 mb-2 text-danger">Error</small>
                     </div>
 
                     <div class="col-4 p-2">
-                        <label class="form-label">Hình ảnh <span>*</span></label>
+                        <label class="form-label">Hình ảnh</label>
                     </div>
                     <div class="col-8">
                         <form name="status-form" id="status-form" method="post" enctype="multipart/form-data">
@@ -115,46 +96,45 @@
                         <label>Kích thước màn hình <span>*</span></label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="text"/>
+                        <input class="form-control-1 mt-2 border border-dark" type="text" style="height: 37.6px; width: 353.6px"/>
                         <small class="p-3 mb-2 text-danger">Error</small>
                     </div>
                     <div class="col-4 p-2">
                         <label>Camera </label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="text"/>
+                        <input class="form-control-1 mt-2 border border-dark" type="text" style="height: 37.6px; width: 353.6px"/>
                         <small class="p-3 mb-2 text-danger">Error</small>
                     </div>
                     <div class="col-4 p-2">
                         <label>Selfie <span>*</span></label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="text"/>
+                        <input class="form-control-1 mt-2 border border-dark" type="text" style="height: 37.6px; width: 353.6px"/>
                         <small class="p-3 mb-2 text-danger">Error</small>
                     </div>
                     <div class="col-4 p-2">
                         <label>CPU <span>*</span></label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="text"/>
+                        <input class="form-control-1 mt-2 border border-dark" type="text" style="height: 37.6px; width: 353.6px"/>
                         <small class="p-3 mb-2 text-danger">Error</small>
                     </div>
                     <div class="col-4 p-2">
                         <label>Lưu trữ <span>*</span></label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="text"/>
+                        <input class="form-control-1 mt-2 border border-dark" type="text" style="height: 37.6px; width: 353.6px"/>
                         <small class="p-3 mb-2 text-danger">Error</small>
                     </div>
                     <div class="col-4 p-2">
-                        <label>Mô tả thêm <span>*</span></label>
+                        <label>Mô tả thêm </label>
                     </div>
                     <div class="col-8">
               <textarea
-                      class="form-control mt-2 border border-dark"
-                      type="text">
+                      class="form-control-1 mt-2 border border-dark"
+                      type="text" style="width: 353.6px; height: 90px">
               </textarea>
-                        <small class="p-3 mb-2 text-danger">Error</small>
                     </div>
                     <div class="col-4 p-2 mt-3">
                         <a href="#"
