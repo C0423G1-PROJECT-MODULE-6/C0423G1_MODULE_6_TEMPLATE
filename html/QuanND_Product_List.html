@@ -8,51 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
-    <style>
-        .form-input {
-            width: 600px;
-            border: 1px solid black;
-            padding: 20px;
-            border-radius: 20px;
-        }
-
-        .form-btn {
-            width: 600px;
-        }
-
-        .form-input {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-        }
-
-        .form-input label {
-            /*font-weight: bold;*/
-        }
-
-        .form-control {
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-            height: auto;
-        }
-
-        .form-select {
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-        }
-
-        .form-btn {
-            text-align: right;
-        }
-
-        span {
-            color: red;
-        }
-    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; top: 0; z-index: 10">
     <div class="container-fluid">
         <a class="navbar-brand" href="HaiBH_Home_Admin.html">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
@@ -61,17 +19,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="NguyenNH_customer_management.html" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Admin
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="PhuocLQ_EmployeeList.html">Quản Lý Nhân Viên</a></li>
-                        <li><a class="dropdown-item" href="NguyenNH_customer_management.html">Quản Lý Báo Cáo Khách
-                            Hàng</a></li>
-                    </ul>
-                </li>
+                <a class="nav-link" href="PhuocLQ_EmployeeList.html" role="button" aria-expanded="false">
+                    Quản Lý Nhân Viên
+                </a>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
@@ -104,7 +54,7 @@
                         Thủ Kho
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="PhapTM_warehouse.html">Quản Lý Xuất/Nhập Kho</a></li>
+                        <li><a class="dropdown-item" href="QuanND_Product_List.html">Quản Lý Xuất/Nhập Kho</a></li>
                     </ul>
                 </li>
             </ul>
@@ -125,13 +75,13 @@
         </div>
     </div>
 </nav>
-<div class="container mt-5">
+<div class="container mt-5 pt-5">
     <div class="col-12 d-flex justify-content-center my-3">
         <h1>Thông tin hàng hóa</h1>
     </div>
     <div class="row my-3">
         <div class="col-12 d-flex justify-content-end">
-            <div class="col-auto me-1">
+            <div class="col-auto me-2">
                 <select class="form-select">
                     <option selected>--Sắp xếp theo--</option>
                     <option>Tên</option>
@@ -139,7 +89,7 @@
                     <option>Số lượng</option>
                 </select>
             </div>
-            <div class="col-auto me-1">
+            <div class="col-auto me-2">
                 <select class="form-select">
                     <option selected>--Tìm kiếm theo--</option>
                     <option>Tên</option>
@@ -147,7 +97,7 @@
                     <option>Số lượng</option>
                 </select>
             </div>
-            <div class="col-auto me-1">
+            <div class="col-auto me-2">
                 <input class="form-control" type="search" aria-label="Search">
             </div>
             <div class="col-auto">
@@ -213,10 +163,10 @@
 
     <div class="row d-flex justify-content-around my-3">
         <div class="col float-start">
-            <a href="/html/DaoPTA_CreateProduct.html" style="text-decoration: none">
+            <a class="me-1  " href="/html/DaoPTA_CreateProduct.html" style="text-decoration: none">
                 <button type="button" class="btn btn-outline-primary">Thêm mới</button>
             </a>
-            <a href="/html/DaoPTA_UpdateProduct.html" style="text-decoration: none">
+            <a class="me-1" href="/html/DaoPTA_UpdateProduct.html" style="text-decoration: none">
                 <button type="button" class="btn btn-outline-success">Cập nhật</button>
             </a>
             <!-- Button to trigger the modal -->
@@ -225,20 +175,21 @@
             </button>
         </div>
         <div class="col-auto float-end">
-                <ul class="pagination mb-0">
-                    <li class="page-item">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trước</a>
-                    </li>
-                    <li class="page-item" aria-current="page">
-                        <a class="page-link" href="#">1/10</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Sau</a>
-                    </li>
-                </ul>
+            <ul class="pagination mb-0">
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trước</a>
+                </li>
+                <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">1/10</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Sau</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
+
 <!-- Modal -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
