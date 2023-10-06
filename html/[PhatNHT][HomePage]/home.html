@@ -181,6 +181,16 @@
     <!-- IPhone -->
     <div class="list-title"><img src="./image/iphone-logo.png" alt="" /></div>
     <div class="iphone-container">
+      <div class="cus-swiper-button-prev">
+        <div class="temp-tag">
+          <i class="bx bx-left-arrow-alt"></i>
+        </div>
+      </div>
+      <div class="cus-swiper-button-next">
+        <div class="temp-tag">
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+      </div>
       <div class="swiper iphone-swiper">
         <div class="swiper-wrapper product-list">
           <div class="swiper-slide">
@@ -253,9 +263,27 @@
               <h4 class="line-through-price">31.000.000đ</h4>
             </a>
           </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="">
+              <div class="slide-image">
+                <img src="./image/slider-1.webp" alt="" />
+              </div>
+              <h3 class="product-name">Iphone 14 Pro Max 256GB</h3>
+              <h2 class="product-price">29.000.000đ</h2>
+              <h4 class="line-through-price">31.000.000đ</h4>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="">
+              <div class="slide-image">
+                <img src="./image/slider-1.webp" alt="" />
+              </div>
+              <h3 class="product-name">Iphone 14 Pro Max 256GB</h3>
+              <h2 class="product-price">29.000.000đ</h2>
+              <h4 class="line-through-price">31.000.000đ</h4>
+            </a>
+          </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
 
@@ -361,18 +389,17 @@
 
       var swiper = new Swiper(".iphone-swiper", {
         slidesPerView: 4,
+        spaceBetween: -20,
         loop: true,
         autoplay: {
           delay: 4000,
           disableOnInteraction: false,
         },
-
         grabCursor: true,
-        // centeredSlides: true,
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
+        navigation: {
+          nextEl: ".cus-swiper-button-next",
+          prevEl: ".cus-swiper-button-prev",
+        },
       });
     </script>
   </body>
