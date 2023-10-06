@@ -7,6 +7,16 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="../../css/test.css" />
     <title>Top Zone</title>
   </head>
@@ -45,6 +55,42 @@
       </div>
     </header>
 
+    <!-- Carousel -->
+    <div class="carousel-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="carousel-image" src="./image/carousel-ip.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="carousel-image"
+              src="./image/carousel-watch.webp"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="carousel-image"
+              src="./image/carousel-sale.webp"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="carousel-image"
+              src="./image/carousel-affordable-price.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </div>
+
     <!-- Body -->
     <div class="container-block">
       <div class="categories">
@@ -77,9 +123,7 @@
           <span class="category-name">Âm thanh</span>
         </div>
       </div>
-      .iphone-products
     </div>
-
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
@@ -138,5 +182,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
   </body>
 </html>
