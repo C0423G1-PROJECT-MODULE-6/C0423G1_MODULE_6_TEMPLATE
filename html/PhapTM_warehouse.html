@@ -24,6 +24,7 @@
 
         .highlight {
             background-color: gray;
+            color: white;
             /* Màu nền sáng */
         }
     </style>
@@ -31,87 +32,77 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="HaiBH_Home_Admin.html">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="NguyenNH_customer_management.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="PhuocLQ_EmployeeList.html">Quản Lý Nhân Viên</a></li>
-                            <li><a class="dropdown-item" href="NguyenNH_customer_management.html">Quản Lý Báo Cáo Khách
-                                    Hàng</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Kinh Doanh
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="LoiVT_SalesReport.html">Quản Lý Báo Cáo Doanh Thu</a>
-                            </li>
-                            <li><a class="dropdown-item" href="QuanND_Product_List.html">Xem Thông Tin Hàng Hoá</a></li>
-                            <li><a class="dropdown-item" href="ThienPT_supplierList.html">Quản Lý Nhà Cung Cấp</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="ThoiND_sale_management.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Bán Hàng
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="ThoiND_sale_management.html">Quản Lý Bán Hàng</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="PhapTM_warehouse.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Thủ Kho
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="PhapTM_warehouse.html">Quản Lý Xuất/Nhập Kho</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" style="margin-left: auto; width: 0">
-                <ul class="navbar-nav" style="margin-left: auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="HaiBH_Infomation.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Bùi Hữu Hải - Admin
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="HaiBH_Infomation.html">Thông Tin Cá Nhân</a></li>
-                            <li><a class="dropdown-item" href="HaiBH_Login.html">Đăng Xuất</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; top: 0; z-index: 9999;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="HaiBH_Home_Admin.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+                aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+                <a class="nav-link" href="PhuocLQ_EmployeeList.html" role="button" aria-expanded="false">
+                    Quản Lý Nhân Viên
+                </a>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Kinh Doanh
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="LoiVT_SalesReport.html">Quản Lý Báo Cáo Doanh Thu</a></li>
+                        <li><a class="dropdown-item" href="QuanND_Product_List.html">Xem Thông Tin Hàng Hoá</a></li>
+                        <li><a class="dropdown-item" href="ThienPT_supplierList.html">Quản Lý Nhà Cung Cấp</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="ThoiND_sale_management.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Bán Hàng
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="ThoiND_sale_management.html">Quản Lý Bán Hàng</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="PhapTM_warehouse.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Thủ Kho
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="QuanND_Product_List.html">Quản Lý Xuất/Nhập Kho</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <div class="d-flex justify-content-center">
+        <div class="collapse navbar-collapse" style="margin-left: auto; width: 0">
+            <ul class="navbar-nav" style="margin-left: auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="HaiBH_Infomation.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Bùi Hữu Hải - Admin
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="HaiBH_Infomation.html">Thông Tin Cá Nhân</a></li>
+                        <li><a class="dropdown-item" href="HaiBH_Login.html">Đăng Xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="d-flex justify-content-center mt-5">
         <form>
             <div class="mt-5">
                 <fieldset class="form-input shadow mx-auto"
                     style="border-radius: 20px;border: 1px solid black;height: auto;width: 60%">
-                    <legend class="float-none w-auto px-4">Nhập kho</legend>
+                    <legend class="float-none w-auto px-1">Nhập kho</legend>
                     <div class="d-flex justify-content-center">
                         <button type="button" class="btn btn-outline-primary col-6 mx-1" style="width: 30%"
                             data-bs-toggle="modal" data-bs-target="#exampleModalProduct">
@@ -155,11 +146,11 @@
                             <div class="col-4 p-2">
                                 <label>Nhà cung cấp </label>
                             </div>
-                            <div class="col-6 mb-2">
+                            <div class="col-4 mb-2">
                                 <input class="form-control mt-2 border border-dark" type="text" readonly />
 
                             </div>
-                            <div class="col-2">
+                            <div class="col-4">
                                 <button type="button" class="btn btn-outline-primary float-center mt-2 shadow"
                                     data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Chọn NCC
@@ -206,6 +197,14 @@
                             <div class="col-auto">
                                 <button class="btn btn-outline-primary text-center border-dark ">Tìm kiếm</button>
                             </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class=" btn btn-outline-primary shadow" style="margin-right: 2rem;width: 10%">
+                                Chọn
+                            </button>
+                            <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal" style="width: 10%">
+                                Hủy
+                            </button>
                         </div>
                         <div class="mx-auto p-3">
                             <table class="border border-dark table table-hover table-layout"
@@ -316,9 +315,6 @@
                     <div class="row col-12 mx-auto">
                         <div class="col-6 p-3">
                             <div style="margin-left: 10%">
-                                <button class=" btn btn-outline-primary" style="margin-right: 2rem;width: 25%">
-                                    Chọn
-                                </button>
                                 <button class=" btn btn-outline-secondary" data-bs-dismiss="modal" style="width: 25%">
                                     Thoát
                                 </button>
@@ -328,9 +324,9 @@
                             <div class="float-end" style="margin-right: 10%">
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination">
-                                        <li class="page-item"><a class="page-link text-dark" href="#">Trước</a></li>
-                                        <li class="page-item"><a class="page-link text-dark" href="#">1/7</a></li>
-                                        <li class="page-item"><a class="page-link text-dark" href="#">Sau</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1/7</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Sau</a></li>
                                     </ul>
                                 </nav>
 
@@ -344,16 +340,15 @@
 
     <!-- modal -->
     <!--Tin DT Choose product-->
-    <div class="modal fade " id="exampleModalProduct" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade " id="exampleModalProduct" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class=" modal-dialog modal-xl ">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-3" id="exampleModalProductLabel">Chọn sản phẩm</h1>
+                    <h1 class="modal-title fs-3" >Chọn sản phẩm</h1>
                 </div>
                 <div class="modal-body">
                     <div class="pt-3">
-                        <div class="row g-3 align-items-center justify-content-end" style="margin-right:3%">
+                        <div class="row g-3 align-items-center justify-content-end" style="margin-right:4%">
                             <div class="col-auto">
                                 <h1 for="inputPassword6" class="col-form-label">Tìm kiếm theo</h1>
                             </div>
@@ -366,25 +361,31 @@
                             </div>
 
                             <div class="col-auto">
-                                <input type="text" id="inputPassword61" class="form-control shadow border-dark"
-                                    aria-describedby="passwordHelpInline">
+                                <input type="text"  class="form-control shadow border-dark"
+                                       aria-describedby="passwordHelpInline">
                             </div>
                             <div class="col-auto">
                                 <button class="btn btn-outline-primary text-center shadow ">Tìm kiếm</button>
                             </div>
                         </div>
-                        <div class="mx-auto p-3 " style="width: 95%">
-                            <table
-                                class="border border-dark shadow table table-hover table-striped-columns table-layout tbl-content"
-                                style="margin-bottom: 0rem">
-                                <tr>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class=" btn btn-outline-primary shadow" style="margin-right: 2rem;width: 10%">
+                                Chọn
+                            </button>
+                            <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal" style="width: 10%">
+                                Hủy
+                            </button>
+                        </div>
+                        <div class="mx-auto p-3 " style="width: 93%">
+                            <table class="border border-dark shadow table table-hover table-layout tbl-content">
+                                <tr style="font-size: larger;background-color: darkgrey">
                                     <th style="width: 15%">
-                                        #
+                                        STT
                                     </th>
                                     <th style="width: 30%">Tên</th>
                                     <th style="width: 25%">Giá</th>
                                     <th style="width: 19%">CPU</th>
-                                    <th style="width: 20%">Lưu trữ</th>
+                                    <th style="width: 15%">Lưu trữ</th>
                                 </tr>
                                 <tr>
                                     <td style="width: 15%">
@@ -399,7 +400,7 @@
                                     <td style="width: 19%">
                                         SCT 301
                                     </td>
-                                    <td style="width: 20%">
+                                    <td style="width: 15%">
                                         250 GB
                                     </td>
                                 </tr>
@@ -416,7 +417,7 @@
                                     <td style="width: 19%">
                                         SCT 301
                                     </td>
-                                    <td style="width: 20%">
+                                    <td style="width: 15%">
                                         125 GB
                                     </td>
                                 </tr>
@@ -433,7 +434,7 @@
                                     <td style="width: 19%">
                                         SCT 301
                                     </td>
-                                    <td style="width: 20%">
+                                    <td style="width: 15%">
                                         64 GB
                                     </td>
                                 </tr>
@@ -442,7 +443,7 @@
                                         4
                                     </td>
                                     <td style="width: 30%">
-                                        Nokia G10 4GB-64GB
+                                        LG G2 4GB-64GB
                                     </td>
                                     <td style="width: 25%">
                                         3.190.000
@@ -450,7 +451,7 @@
                                     <td style="width: 19%">
                                         SCT 301
                                     </td>
-                                    <td style="width: 20%">
+                                    <td style="width: 15%">
                                         64 GB
                                     </td>
                                 </tr>
@@ -459,7 +460,7 @@
                                         5
                                     </td>
                                     <td style="width: 30%">
-                                        Nokia G10 4GB-64GB
+                                        Nokia Lumia 4GB-64GB
                                     </td>
                                     <td style="width: 25%">
                                         3.190.000
@@ -467,7 +468,7 @@
                                     <td style="width: 19%">
                                         SCT 301
                                     </td>
-                                    <td style="width: 20%">
+                                    <td style="width: 15%">
                                         64 GB
                                     </td>
                                 </tr>
@@ -479,25 +480,20 @@
                 <div class="modal-footer">
                     <div class="row col-12 mx-auto">
                         <div class="col-6 p-3">
-                            <div style="margin-left: 10%">
-                                <button class=" btn btn-outline-primary shadow" style="margin-right: 2rem;width: 40%">
-                                    Chọn
-                                </button>
-                                <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal"
-                                    style="width: 40%">
-
-                                    Hủy
+                            <div style="margin-left: 8%">
+                                <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal" style="width: 40%">
+                                    Trở về
                                 </button>
                             </div>
                         </div>
                         <div class="col-6 mt-3">
-                            <div class="float-end " style="margin-right: 10%">
+                            <div class="float-end " style="margin-right: 8%">
                                 <nav aria-label="Page navigation example ">
                                     <ul class="pagination">
-                                        <li class="page-item"><a class="page-link text-dark" href="#">Trước</a></li>
-                                        <li class="page-item"><a class="page-link text-dark" href="#">1/2</a></li>
+                                        <li class="page-item"><a class="page-link " href="#">Trước</a></li>
+                                        <li class="page-item"><a class="page-link " href="#">1/2</a></li>
 
-                                        <li class="page-item"><a class="page-link text-dark" href="#">Sau</a></li>
+                                        <li class="page-item"><a class="page-link " href="#">Sau</a></li>
                                     </ul>
                                 </nav>
 
