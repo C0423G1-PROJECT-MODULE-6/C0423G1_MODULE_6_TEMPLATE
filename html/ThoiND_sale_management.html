@@ -11,24 +11,28 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="HaiBH_Home_Admin.html">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+                aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="NguyenNH_customer_management.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="NguyenNH_customer_management.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         Admin
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="PhuocLQ_EmployeeList.html">Quản Lý Nhân Viên</a></li>
-                        <li><a class="dropdown-item" href="NguyenNH_customer_management.html">Quản Lý Báo Cáo Khách Hàng</a></li>
+                        <li><a class="dropdown-item" href="NguyenNH_customer_management.html">Quản Lý Báo Cáo Khách
+                            Hàng</a></li>
                     </ul>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
                         Kinh Doanh
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
@@ -40,7 +44,8 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="ThoiND_sale_management.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="ThoiND_sale_management.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         Bán Hàng
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
@@ -50,7 +55,8 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="PhapTM_warehouse.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="PhapTM_warehouse.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         Thủ Kho
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
@@ -62,7 +68,8 @@
         <div class="collapse navbar-collapse" style="margin-left: auto; width: 0">
             <ul class="navbar-nav" style="margin-left: auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="HaiBH_Infomation.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="HaiBH_Infomation.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         Bùi Hữu Hải - Admin
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
@@ -74,8 +81,7 @@
         </div>
     </div>
 </nav>
-<div class="container container-fluid d-flex justify-content-center">
-
+<div class="container container-fluid d-flex justify-content-center mt-5 mb-3">
     <form>
         <fieldset class="form-input shadow mx-auto"
                   style="border-radius: 20px;border: 1px solid black;height: auto;width: 80%">
@@ -85,57 +91,55 @@
                           style="border-radius: 20px;border: 1px solid black;height: auto;width: 80%">
                     <legend class="float-none w-auto px-3">Thông tin khách hàng</legend>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-primary col-6 mx-1" style="width: 30%" data-bs-toggle="modal" data-bs-target="#exampleModalCustomer">
+                        <button type="button" class="btn btn-outline-primary col-6 mx-1" style="width: 30%"
+                                data-bs-toggle="modal" data-bs-target="#exampleModalCustomer">
                             Chọn khách hàng cũ
                         </button>
 
-                        <button type="button" class="btn btn-outline-primary col-6 mx-1" style="width: 30%" data-bs-toggle="modal" data-bs-target="#exampleModalCreateCustomer">
-                            Thêm mới khách hàng</button>
+                        <button type="button" class="btn btn-outline-primary col-6 mx-1" style="width: 30%"
+                                data-bs-toggle="modal" data-bs-target="#exampleModalCreateCustomer">
+                            Thêm mới khách hàng
+                        </button>
                     </div>
                     <div>
                         <div class="row p-2 mx-auto" style="width: 90%">
                             <div class="col-4 p-2">
                                 <label>Tên khách hàng</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-8 mb-2">
                                 <input class="form-control mt-2 border border-dark" type="text"
                                        placeholder="Nguyen Dinh Thoi" readonly/>
-                                <small class="p-3 mb-2 text-danger">Error</small>
                             </div>
                             <div class="col-4 p-2">
-                                <label> điện thoại</label>
+                                <label>Số điện thoại</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-8 mb-2">
                                 <input class="form-control mt-2 border border-dark" type="text"
                                        placeholder="0784443801" readonly/>
-                                <small class="p-3 mb-2 text-danger">Error</small>
                             </div>
                             <div class="col-4 p-2">
                                 <label>Địa chỉ</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-8 mb-2">
                                 <input class="form-control mt-2 border border-dark" type="text"
                                        placeholder="Da Nang" readonly/>
-                                <small class="p-3 mb-2 text-danger">Error</small>
 
                             </div>
                             <div class="col-4 p-2">
                                 <label>Ngày sinh </label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-8 mb-2">
                                 <input class="form-control mt-2 border border-dark" type="text"
                                        placeholder="24/09/2023" readonly/>
-                                <small class="p-3 mb-2 text-danger">Error</small>
                             </div>
                             <div class="col-4 p-2">
-                                <label>Địa chỉ email</label>
+                                <label>Email</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-8 mb-2">
                                 <input
                                         class="form-control mt-2 border border-dark"
                                         type="email" placeholder="dinhthoi2411@gmail.com" readonly
                                 />
-                                <small class="p-3 mb-2 text-danger">Error</small>
                             </div>
 
                         </div>
@@ -145,54 +149,39 @@
             <div style="margin-bottom: 5%">
                 <fieldset class="form-input shadow mx-auto"
                           style="border-radius: 20px;border: 1px solid black;height: auto;width: 80%">
-                    <legend class="float-none w-auto px-3">Thông tin sản phẩm</legend>
+                    <legend class="float-none w-auto px-3">Sản phẩm đã chọn</legend>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-primary col-6 mx-1" style="width: 30%" data-bs-toggle="modal" data-bs-target="#exampleModalProduct">
+                        <button type="button" class="btn btn-outline-primary col-6 mx-1" style="width: 30%"
+                                data-bs-toggle="modal" data-bs-target="#exampleModalProduct">
                             Chọn sản phẩm
                         </button>
                         <button class="btn btn-outline-primary col-6 mx-1" style="width: 30%">Scan QR</button>
                     </div>
-                    <div>
-                        <div class="row p-2 mx-auto" style="width: 90%">
-                            <div class="col-4 p-2">
-                                <label>Tên sản phẩm</label>
-                            </div>
-                            <div class="col-8">
-                                <input class="form-control mt-2 border border-dark" type="text"
-                                       placeholder="Iphone 15" readonly/>
-                                <small class="p-3 mb-2 text-danger">Error</small>
-                            </div>
-                            <div class="col-4 p-2">
-                                <label>Đơn giá</label>
-                            </div>
-                            <div class="col-8">
-                                <input class="form-control mt-2 border border-dark" type="text"
-                                       placeholder="30.000.000" readonly/>
-                                <small class="p-3 mb-2 text-danger">Error</small>
-                            </div>
-                            <div class="col-4 p-2">
-                                <label>Số lượng</label>
-                            </div>
-                            <div class="col-8">
-                                <input class="form-control mt-2 border border-dark" type="text"/>
-                                <small class="p-3 mb-2 text-danger">Error</small>
-
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button class="btn btn-outline-primary d-flex justify-content-center" style="width: 30%">Gửi</button>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-            <div>
-                <fieldset class="form-input shadow mx-auto"
-                          style="border-radius: 20px;border: 1px solid black;height: auto;width: 80%">
-                    <legend class="float-none w-auto px-3">Sản phẩm đã chọn</legend>
                     <div class="row">
-                        <div class="row p-2 mx-auto" style="width: 90%">
-                            <b class="text-center">Trống</b>
-                        </div>
+                        <!--                        <div class="row p-2 mx-auto" style="width: 90%">-->
+                        <!--                            <b class="text-center">Trống</b>-->
+                        <!--                        </div>-->
+                        <table class="table mx-auto" style="width: 90%">
+                            <thead>
+                            <tr>
+                                <th class="col-3">#</th>
+                                <th class="col-3">Tên sản phẩm</th>
+                                <th class="col-3">Giá tiền</th>
+                                <th class="col-3">Số lượng</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-3">1</td>
+                                <td class="col-3">Iphone 15</td>
+                                <td class="col-3">30.000.000</td>
+                                <td class="col-3">3</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center" colspan="4"><b>Trống</b></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </fieldset>
             </div>
@@ -204,25 +193,33 @@
                     <input class="form-control mt-2 border border-dark" type="text"
                            placeholder="30.000.000" readonly/>
                 </div>
-                <div class="col-4 p-2">
+                <div class="col-4 p-2 mt-2">
                     <label>Hình thức thanh toán</label>
                 </div>
-                <div class="col-8" style="position: relative;top: 9px">
-                    <input type="radio">Thẻ tín dụng
-                    <input type="radio">Tiền mặt
+                <div class="col-8 mt-2" style="position: relative;top: 9px">
+                    <input type="radio" id="theTinDung" name="payment" value="1" style="margin-right: 1%;">
+                    <label for="theTinDung" style="margin-right: 4%;">Thẻ tín dụng</label>
+                    <input type="radio" id="tienMat" name="payment" value="2" style="margin-right: 1%;">
+                    <label for="tienMat">Tiền mặt</label>
                 </div>
-                <div class="col-8">
-                    <input type="checkbox">  In hoá đơn
+                <div class="col-8 mt-2">
+                    <input id="print" value="1" type="checkbox" name="print" style="margin-right: 1%;">
+                    <label for="print">In hoá đơn</label>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-outline-primary col-6 d-flex justify-content-center" style="width: 30%;margin: 15px">Tiến hành thanh toán</button>
+                    <button class="btn btn-outline-primary col-6 d-flex justify-content-center"
+                            style="width: 30%;margin: 15px">Tiến hành thanh toán
+                    </button>
                 </div>
             </div>
         </fieldset>
     </form>
-<!--    TinDT Modal Create Customer-->
-    <div class="modal fade " id="exampleModalCreateCustomer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class=" modal-dialog modal-dialog-centered modal-lg " >
+
+
+    <!--    TinDT Modal Create Customer-->
+    <div class="modal fade " id="exampleModalCreateCustomer" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class=" modal-dialog modal-dialog-centered modal-lg ">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-3" id="exampleModalLabel">Thêm mới thông tin khách hàng</h1>
@@ -234,7 +231,7 @@
                             <label>Tên khách hàng <span class="text-danger">*</span> </label>
                         </div>
                         <div class="col-8">
-                            <input class="form-control shadow mt-2 border border-dark" type="text" />
+                            <input class="form-control shadow mt-2 border border-dark" type="text"/>
                             <small class="p-3 mb-2 text-danger"></small>
 
                         </div>
@@ -254,14 +251,14 @@
                             <label>Số điện thoại <span class="text-danger">*</span></label>
                         </div>
                         <div class="col-8">
-                            <input class="form-control shadow mt-2 border border-dark" type="text" />
+                            <input class="form-control shadow mt-2 border border-dark" type="text"/>
                             <small class="p-3 mb-2 text-danger"></small>
                         </div>
                         <div class="col-4 p-2">
                             <label>Ngày sinh <span class="text-danger">*</span></label>
                         </div>
                         <div class="col-8">
-                            <input class="form-control shadow mt-2 border border-dark" type="date" />
+                            <input class="form-control shadow mt-2 border border-dark" type="date"/>
                             <small class="p-3 mb-2 text-danger"></small>
 
                         </div>
@@ -297,7 +294,8 @@
                                 <button class=" btn btn-outline-primary shadow" style="margin-right: 1rem;width: 45%">
                                     Chọn
                                 </button>
-                                <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal" style="width: 45%">
+                                <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal"
+                                        style="width: 45%">
 
                                     Thoát
                                 </button>
@@ -314,9 +312,9 @@
             </div>
         </div>
     </div>
-
-<!--TinDT Modal Choose information customer-->
-    <div class="modal fade " id="exampleModalCustomer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--TinDT Modal Choose information customer-->
+    <div class="modal fade " id="exampleModalCustomer" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
         <div class=" modal-dialog modal-xl ">
             <div class="modal-content">
                 <div class="modal-header">
@@ -409,7 +407,8 @@
                                 <button class=" btn btn-outline-primary shadow" style="margin-right: 2rem;width: 40%">
                                     Chọn
                                 </button>
-                                <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal" style="width: 40%">
+                                <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal"
+                                        style="width: 40%">
 
                                     Thoát
                                 </button>
@@ -433,12 +432,13 @@
             </div>
         </div>
     </div>
-<!--TinDT Modal Choose information product-->
-    <div class="modal fade " id="exampleModalProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--TinDT Modal Choose information product-->
+    <div class="modal fade " id="exampleModalProduct" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
         <div class=" modal-dialog modal-xl ">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-3" >Chọn sản phẩm</h1>
+                    <h1 class="modal-title fs-3">Chọn sản phẩm</h1>
                 </div>
                 <div class="modal-body">
                     <div class="p-3">
@@ -572,7 +572,8 @@
                                 <button class=" btn btn-outline-primary shadow" style="margin-right: 2rem;width: 40%">
                                     Chọn
                                 </button>
-                                <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal" style="width: 40%">
+                                <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal"
+                                        style="width: 40%">
 
                                     Hủy
                                 </button>
@@ -598,14 +599,9 @@
     </div>
 
 </div>
-<table>
-
-
-</table>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 </body>
-<
+</html>
