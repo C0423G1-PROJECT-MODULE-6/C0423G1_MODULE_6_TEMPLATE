@@ -15,14 +15,19 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"
     ></script>
-</head>
+    <style>
+      .selected {
+          background-color: grey;
+      }
+  </style>
+  </head>
 
-<body>
-<nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark"
-        style="position: fixed; width: 100%; top: 0; z-index: 10"
->
-    <div class="container-fluid">
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="position: fixed; width: 100%; top: 0; z-index: 10"
+    >
+      <div class="container-fluid">
         <a class="navbar-brand" href="HaiBH_Home_Admin.html">Home</a>
         <button
                 class="navbar-toggler"
@@ -241,7 +246,22 @@
         </tbody>
     </table>
 
-    <div class="row d-flex col-12 mt-3">
+      <!-- java script để chọn row -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $("tr").click(function () {
+            // Xóa lớp CSS 'selected' khỏi tất cả các hàng
+            $("tr").removeClass("selected");
+
+            // Thêm lớp CSS 'selected' cho hàng được chọn
+            $(this).addClass("selected");
+          });
+        });
+      </script>
+      <!-- java script để chọn row -->
+
+      <div class="row d-flex col-12 mt-3">
         <div class="col float-start">
             <a href="CaoNV_EmployeeCreate.html"
             >
@@ -287,15 +307,15 @@
     </div>
 </div>
 
-<!-- Modal -->
-<div
-        class="modal fade"
-        id="deleteModal"
-        tabindex="-1"
-        aria-labelledby="deleteModalLabel"
-        aria-hidden="true"
->
-    <div class="modal-dialog">
+    <!-- Modal -->
+    <div
+      class="modal fade "
+      id="deleteModal"
+      tabindex="-1"
+      aria-labelledby="deleteModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="deleteModalLabel">Thông báo!!!</h5>
