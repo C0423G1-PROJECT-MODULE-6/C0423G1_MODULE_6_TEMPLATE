@@ -15,6 +15,11 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .selected {
+          background-color: grey;
+      }
+  </style>
   </head>
 
   <body>
@@ -241,6 +246,21 @@
         </tbody>
       </table>
 
+      <!-- java script để chọn row -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $("tr").click(function () {
+            // Xóa lớp CSS 'selected' khỏi tất cả các hàng
+            $("tr").removeClass("selected");
+
+            // Thêm lớp CSS 'selected' cho hàng được chọn
+            $(this).addClass("selected");
+          });
+        });
+      </script>
+      <!-- java script để chọn row -->
+
       <div class="row d-flex col-12 mt-3">
         <div class="col float-start">
           <a href="CaoNV_EmployeeCreate.html"
@@ -285,7 +305,7 @@
 
     <!-- Modal -->
     <div
-      class="modal fade"
+      class="modal fade mt-5"
       id="deleteModal"
       tabindex="-1"
       aria-labelledby="deleteModalLabel"
