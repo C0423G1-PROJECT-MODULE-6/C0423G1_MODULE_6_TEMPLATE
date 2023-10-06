@@ -13,88 +13,93 @@
 </head>
 <body>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCreateCustomer">
     Thêm mới khách hàng</button>
-<i class='bx bxl-facebook-circle'></i><!-- Modal -->
-<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="exampleModalCreateCustomer" data-bs-backdrop="static"tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class=" modal-dialog modal-dialog-centered modal-lg " >
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-3" id="exampleModalLabel">Thêm mới thông tin khách hàng</h1>
             </div>
             <div class="modal-body">
-                <div class="row p-2 mx-auto" style="width: 90%">
+                <div class="row p-2 mx-auto" style="width: 80%">
+
                     <div class="col-4 p-2">
                         <label>Tên khách hàng <span class="text-danger">*</span> </label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="text" />
-                        <small class="p-3 mb-2 text-danger">Error</small>
+                        <input class="form-control shadow mt-2 border border-dark" type="text" />
+                        <small class="p-3 mb-2 text-danger"></small>
+
                     </div>
                     <div class="col-4 p-2">
                         <label>Giới tính <span class="text-danger">*</span> </label>
                     </div>
                     <div class="col-8">
-                        <select class="form-select mt-2 border border-dark">
+                        <select class="form-select shadow mt-2 border border-dark">
                             <option value="1">Nam</option>
                             <option value="2">Nữ</option>
                         </select>
-                        <small class="p-3 mb-2 text-danger">Error</small>
+                        <small class="p-3 mb-2 text-danger"></small>
+
                     </div>
 
                     <div class="col-4 p-2">
                         <label>Số điện thoại <span class="text-danger">*</span></label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="text" />
-                        <small class="p-3 mb-2 text-danger">Error</small>
+                        <input class="form-control shadow mt-2 border border-dark" type="text" />
+                        <small class="p-3 mb-2 text-danger"></small>
                     </div>
                     <div class="col-4 p-2">
-                        <label>Ngày sinh </label>
+                        <label>Ngày sinh <span class="text-danger">*</span></label>
                     </div>
                     <div class="col-8">
-                        <input class="form-control mt-2 border border-dark" type="date" />
-                        <small class="p-3 mb-2 text-danger">Error</small>
+                        <input class="form-control shadow mt-2 border border-dark" type="date" />
+                        <small class="p-3 mb-2 text-danger"></small>
+
                     </div>
                     <div class="col-4 p-2">
                         <label>Địa chỉ email <span class="text-danger">*</span></label>
                     </div>
                     <div class="col-8">
                         <input
-                                class="form-control mt-2 border border-dark"
+                                class="form-control shadow mt-2 border border-dark"
                                 type="email"
                         />
-                        <small class="p-3 mb-2 text-danger">Error</small>
+                        <small class="p-3 mb-2 text-danger"></small>
+
                     </div>
                     <div class="col-4 p-2">
                         <label>Địa chỉ <span class="text-danger">*</span></label>
                     </div>
                     <div class="col-8">
               <textarea
-                      class="form-control mt-2 border border-dark"
+                      class="form-control mt-2 shadow border border-dark"
                       type="text"
               ></textarea>
-                        <small class="p-3 mb-2 text-danger">Error</small>
+                        <small class="p-3 mb-2 text-danger"></small>
+
                     </div>
                 </div>
 
             </div>
             <div class="modal-footer">
                 <div class="row col-12 mx-auto">
-                    <div class="col-6 p-3">
-                        <div style="margin-left: 10%">
-                            <button class=" btn btn-primary" style="margin-right: 2rem;width: 40%">
-                                Chọn
+                    <div class="col-8 p-3">
+                        <div style="margin-left: 9%">
+                            <button class=" btn btn-outline-primary shadow" style="margin-right: 1rem;width: 45%">
+                                Lưu
                             </button>
-                            <button class=" btn btn-secondary" data-bs-dismiss="modal" style="width: 40%">
-                                Thoát
+                            <button class=" btn btn-outline-secondary shadow" data-bs-dismiss="modal" style="width: 45%">
+
+                                Trở về
                             </button>
                         </div>
                     </div>
-                    <div class="col-6 mt-3">
+                    <div class="col-4 mt-3">
                         <div class="float-end" style="margin-right: 20%">
                             <small class="text-danger">(*)</small> Thông tin bắt buộc
-
 
                         </div>
                     </div>

@@ -7,24 +7,18 @@
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body style="">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; top: 0; z-index: 9999">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="HaiBH_Home_Admin.html">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
                 aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Admin
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Quản Lý Nhân Viên</a></li>
-                    </ul>
-                </li>
+                <a class="nav-link" href="PhuocLQ_EmployeeList.html" role="button" aria-expanded="false">
+                    Quản Lý Nhân Viên
+                </a>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
@@ -33,32 +27,31 @@
                         Kinh Doanh
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Quản Lý Kinh Doanh</a></li>
-                        <li><a class="dropdown-item" href="#">Quản Lý Báo Cáo</a></li>
-                        <li><a class="dropdown-item" href="#">Xem Thông Tin Hàng Hoá</a></li>
-                        <li><a class="dropdown-item" href="#">Quản Lý Nhà Cung Cấp</a></li>
+                        <li><a class="dropdown-item" href="LoiVT_SalesReport.html">Quản Lý Báo Cáo Doanh Thu</a></li>
+                        <li><a class="dropdown-item" href="QuanND_Product_List.html">Xem Thông Tin Hàng Hoá</a></li>
+                        <li><a class="dropdown-item" href="ThienPT_supplierList.html">Quản Lý Nhà Cung Cấp</a></li>
                     </ul>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="ThoiND_sale_management.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         Bán Hàng
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Quản Lý Bán Hàng</a></li>
+                        <li><a class="dropdown-item" href="ThoiND_sale_management.html">Quản Lý Bán Hàng</a></li>
                     </ul>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="PhapTM_warehouse.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         Thủ Kho
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Quản Lý Xuất/Nhập Kho</a></li>
+                        <li><a class="dropdown-item" href="QuanND_Product_List.html">Quản Lý Xuất/Nhập Kho</a></li>
                     </ul>
                 </li>
             </ul>
@@ -66,13 +59,13 @@
         <div class="collapse navbar-collapse" style="margin-left: auto; width: 0">
             <ul class="navbar-nav" style="margin-left: auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="HaiBH_Infomation.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         Bùi Hữu Hải - Admin
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="HaiBH_Infomation.html">Thông Tin Cá Nhân</a></li>
-                        <li><a class="dropdown-item" href="#">Đăng Xuất</a></li>
+                        <li><a class="dropdown-item" href="HaiBH_Login.html">Đăng Xuất</a></li>
                     </ul>
                 </li>
             </ul>
@@ -80,90 +73,94 @@
     </div>
 </nav>
 
-<div style="width: 80%; margin: 5% auto 20% auto">
-    <form action="HaiBH_Home_Admin.html">
-        <div class="row">
-            <h1>Thông Tin Cá Nhân</h1>
+
+<div style="width: 80%; margin: 5% auto 20% auto" class="row">
+    <div class="col-6" style="padding: 2%">
+        <form action="HaiBH_Home_Admin.html">
+            <h1 style="text-align: center">Thông Tin Cá Nhân</h1>
             <hr>
-            <div class="col-6">
-                <div class="mb-3">
-                    <label for="code" class="form-label">Mã Số Nhân Viên</label>
-                    <input type="text" class="form-control" id="code" aria-describedby="emailHelp" value="AD-0001"
-                           disabled>
-                </div>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Họ Và Tên</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="job" class="form-label">Công Việc</label>
-                    <input type="text" class="form-control" id="job" value="Quản Lý" readonly disabled>
+            <div class="mb-3">
+                <label for="code" class="form-label">Mã Số Nhân Viên</label>
+                <input type="text" class="form-control" id="code" aria-describedby="emailHelp" value="AD-0001"
+                       disabled>
+            </div>
+            <div class="mb-3">
+                <label for="job" class="form-label">Công Việc</label>
+                <input type="text" class="form-control" id="job" value="Quản Lý" readonly disabled>
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Họ Và Tên</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Ngày Sinh</label>
+                <input type="date" class="form-control" id="date" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Số Điện Thoại</label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Địa Chỉ</label>
+                <input type="text" class="form-control" id="address">
+            </div>
+            <div class="mb-3 mt-4">
+                <div style="width: 40%; margin-left: auto; margin-right: auto">
+                    <button type="submit" class="form-control btn btn-outline-primary" id="sub">Lưu</button>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="mb-3">
-                    <label for="date" class="form-label">Ngày Sinh</label>
-                    <input type="date" class="form-control" id="date" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Số Điện Thoại</label>
-                    <input type="text" class="form-control" id="phone">
-                </div>
-                <div class="mb-3">
-                    <label for="address" class="form-label">Địa Chỉ</label>
-                    <input type="text" class="form-control" id="address">
-                </div>
-                <div class="mb-3">
-                    <label for="sub" class="form-label">.</label>
-                    <input type="submit" class="form-control btn btn-outline-primary" id="sub"
-                           value="Lưu Thông Tin Thay Đổi">
-                </div>
-            </div>
-        </div>
-    </form>
-    <form action="">
-        <div class="row" style="margin-top: 5%">
-            <h1>Thay Đổi Mật Khẩu</h1>
+        </form>
+    </div>
+    <div class="col-6" style="padding: 2%">
+        <form action="">
+            <h1 style="text-align: center">Thay Đổi Mật Khẩu</h1>
             <hr>
-            <div class="col-6">
-                <div class="mb-3">
-                    <label for="old" class="form-label">Mật Khẩu Cũ</label>
-                    <input type="password" class="form-control" id="old">
-                </div>
-                <div class="mb-3">
-                    <label for="new" class="form-label">Mật Khẩu Mới</label>
-                    <input type="password" class="form-control" id="new">
-                </div>
-                <div class="mb-3">
-                    <label for="again" class="form-label">Nhập Lại Mật Khẩu Mới</label>
-                    <input type="password" class="form-control" id="again">
-                </div>
-                <button type="button" class="btn btn-outline-primary" style="width: 20%; margin-left: auto; margin-right: auto"
-                        id="showButton">Lưu
-                </button>
+            <div class="mb-3">
+                <label for="old" class="form-label">Mật Khẩu Cũ</label>
+                <input type="password" class="form-control" id="old">
             </div>
-            <div class="col-6">
-                <div class="mb-3" id="hiddenDiv" style="display: none;">
+            <div class="mb-3">
+                <label for="new" class="form-label">Mật Khẩu Mới</label>
+                <input type="password" class="form-control" id="new">
+            </div>
+            <div class="mb-3">
+                <label for="again" class="form-label">Nhập Lại Mật Khẩu Mới</label>
+                <input type="password" class="form-control" id="again">
+            </div>
+            <div id="hiddenDiv" style="display: none">
+                <div class="mb-3">
                     <label for="otp" class="form-label">Mã Xác Nhận</label>
                     <input type="password" class="form-control" id="otp">
-                    <input style="margin-top: 2%" type="submit" class="form-control btn btn-outline-primary" id="subOtp"
-                           value="Xác Nhận">
+                </div>
+                <div class="mb-3 mt-4">
+                    <div style="width: 40%; margin-left: auto; margin-right: auto">
+                        <button type="submit" style="width: 100%" class="btn btn-outline-primary" id="subOtp">Xác Nhận
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </form>
+            <div class="mb-3 mt-4" id="showDiv">
+                <div style="width: 40%; margin-left: auto; margin-right: auto">
+                    <button type="button" style="width: 100%" class="btn btn-outline-primary" id="showButton">Lưu
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
 
 <script>
     let showButton = document.getElementById('showButton');
     let hiddenDiv = document.getElementById('hiddenDiv');
+    let showDiv = document.getElementById('showDiv');
 
     showButton.addEventListener('click', function () {
         hiddenDiv.style.display = 'block';
+        showDiv.style.display = 'none';
     });
 </script>
 

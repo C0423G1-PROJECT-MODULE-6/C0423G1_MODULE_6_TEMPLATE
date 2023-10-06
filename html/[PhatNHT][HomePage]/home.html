@@ -7,7 +7,19 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../../css/test.css" />
+
     <title>Top Zone</title>
   </head>
   <body>
@@ -45,7 +57,94 @@
       </div>
     </header>
 
-    <!-- Body -->
+    <!-- Carousel -->
+    <div class="carousel-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="carousel-image" src="./image/carousel-ip.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="carousel-image"
+              src="./image/carousel-watch.webp"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="carousel-image"
+              src="./image/carousel-sale.webp"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="carousel-image"
+              src="./image/carousel-affordable-price.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Bestseller -->
+
+    <div class="swiper bestseller-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="tranding-slide-image">
+            <img src="./image/slider-1.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tranding-slide-image">
+            <img src="./image/slider-2.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tranding-slide-image">
+            <img src="./image/slider-4.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tranding-slide-image">
+            <img src="./image/slider-2.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tranding-slide-image">
+            <img src="./image/slider-5.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tranding-slide-image">
+            <img src="./image/slider-2.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tranding-slide-image">
+            <img src="./image/slider-4.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tranding-slide-image">
+            <img src="./image/slider-2.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tranding-slide-image">
+            <img src="./image/slider-5.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Categories -->
     <div class="container-block">
       <div class="categories">
         <div class="category-item" href="">
@@ -77,7 +176,87 @@
           <span class="category-name">Âm thanh</span>
         </div>
       </div>
-      .iphone-products
+    </div>
+
+    <!-- IPhone -->
+    <div class="list-title"><img src="./image/iphone-logo.png" alt="" /></div>
+    <div class="iphone-container">
+      <div class="swiper iphone-swiper">
+        <div class="swiper-wrapper product-list">
+          <div class="swiper-slide">
+            <a class="product-link" href="">
+              <div class="slide-image">
+                <img src="./image/slider-1.webp" alt="" />
+              </div>
+              <h3 class="product-name">Iphone 14 Pro Max 256GB</h3>
+              <h2 class="product-price">29.000.000đ</h2>
+              <h4 class="line-through-price">31.000.000đ</h4>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="">
+              <div class="slide-image">
+                <img src="./image/slider-1.webp" alt="" />
+              </div>
+              <h3 class="product-name">Iphone 14 Pro Max 256GB</h3>
+              <h2 class="product-price">29.000.000đ</h2>
+              <h4 class="line-through-price">31.000.000đ</h4>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="">
+              <div class="slide-image">
+                <img src="./image/slider-1.webp" alt="" />
+              </div>
+              <h3 class="product-name">Iphone 14 Pro Max 256GB</h3>
+              <h2 class="product-price">29.000.000đ</h2>
+              <h4 class="line-through-price">31.000.000đ</h4>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="">
+              <div class="slide-image">
+                <img src="./image/slider-1.webp" alt="" />
+              </div>
+              <h3 class="product-name">Iphone 14 Pro Max 256GB</h3>
+              <h2 class="product-price">29.000.000đ</h2>
+              <h4 class="line-through-price">31.000.000đ</h4>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="">
+              <div class="slide-image">
+                <img src="./image/slider-1.webp" alt="" />
+              </div>
+              <h3 class="product-name">Iphone 14 Pro Max 256GB</h3>
+              <h2 class="product-price">29.000.000đ</h2>
+              <h4 class="line-through-price">31.000.000đ</h4>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="">
+              <div class="slide-image">
+                <img src="./image/slider-1.webp" alt="" />
+              </div>
+              <h3 class="product-name">Iphone 14 Pro Max 256GB</h3>
+              <h2 class="product-price">29.000.000đ</h2>
+              <h4 class="line-through-price">31.000.000đ</h4>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="">
+              <div class="slide-image">
+                <img src="./image/slider-1.webp" alt="" />
+              </div>
+              <h3 class="product-name">Iphone 14 Pro Max 256GB</h3>
+              <h2 class="product-price">29.000.000đ</h2>
+              <h4 class="line-through-price">31.000.000đ</h4>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -138,5 +317,63 @@
         </div>
       </div>
     </footer>
+    <!-- Swiper JS -->
+    <!-- this line must be on top !!! -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
+    <script>
+      // Bestseller Swiper
+      var swiper = new Swiper(".bestseller-swiper", {
+        slidesPerView: 3,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 80,
+          depth: 200,
+          modifier: 1,
+          slideShadows: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      // Iphone Swiper
+
+      var swiper = new Swiper(".iphone-swiper", {
+        slidesPerView: 4,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+
+        grabCursor: true,
+        // centeredSlides: true,
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
+    </script>
   </body>
 </html>
