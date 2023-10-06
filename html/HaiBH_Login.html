@@ -10,35 +10,51 @@
 
 
 <div style="width: 30%; margin: 15% auto 20% auto">
-    <div style="margin: 5%; background-color: white">
-        <form action="HaiBH_Home_Admin.html">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Tên Đăng Nhập</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <!--                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Mật Khẩu</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div id="hiddenDiv" style="display: none">
+    <fieldset
+            class="form-input shadow"
+            style="
+              border-radius: 20px;
+              border: 1px solid #000000;
+              height: auto;
+              padding: 20px;
+              background-color: #f8f9fa;
+              width: 100%;
+            "
+    >
+        <legend class="float-none w-auto px-1">
+            <h2>Đăng Nhập</h2>
+        </legend>
+        <div style="margin: 3%">
+            <form action="HaiBH_Home_Admin.html">
                 <div class="mb-3">
-                    <label for="otp" class="form-label">Mã Xác Nhận</label>
-                    <input type="password" class="form-control" id="otp">
+                    <label for="exampleInputEmail1" class="form-label">Tên Đăng Nhập</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <!--                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
                 </div>
-                <div class="mt-4">
-                    <div style="width: 40%; margin-left: auto; margin-right: auto">
-                        <button type="submit" style="width: 100%" class="btn btn-outline-primary" id="subOtp">Xác Nhận</button>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mật Khẩu</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div id="hiddenDiv" style="display: none">
+                    <div class="mb-3">
+                        <label for="otp" class="form-label">Mã Xác Nhận</label>
+                        <input type="password" class="form-control" id="otp">
+                    </div>
+                    <div class="mt-4">
+                        <div style="width: 40%; margin-left: auto; margin-right: auto">
+                            <button type="submit" style="width: 100%" class="btn btn-outline-primary" id="subOtp">Xác Nhận</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="mt-4" id="showDiv">
-                <div style="width: 40%; margin-left: auto; margin-right: auto">
-                    <button type="button" style="width: 100%" class="btn btn-outline-primary" id="showButton">Login</button>
+                <div class="mt-4" id="showDiv">
+                    <div style="width: 40%; margin-left: auto; margin-right: auto">
+                        <button type="button" style="width: 100%" class="btn btn-outline-primary" id="showButton">Login</button>
+                    </div>
                 </div>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
+
+    </fieldset>
 </div>
 
 <script>
