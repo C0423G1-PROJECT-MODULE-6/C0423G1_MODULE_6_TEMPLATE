@@ -230,9 +230,7 @@ h4 {
   display: block;
   text-align: center;
 }
-.swiper-slide {
-  /* width: 400px !important; */
-}
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -303,7 +301,6 @@ h4 {
   position: relative;
   background-color: var(--product-background);
   width: 250px;
-  height: 400px;
 }
 .product-link:hover img {
   scale: 1.05;
@@ -354,4 +351,21 @@ h4 {
 .cus-swiper-button-prev:hover .temp-tag,
 .cus-swiper-button-next:hover .temp-tag {
   background-color: var(--circle-background-hover);
+}
+.product-name {
+  font-size: 15px;
+  font-weight: normal;
+  padding: 10px;
+  text-align: center;
+  line-height: 1.6;
+}
+.product-price {
+  margin: 10px;
+  font-size: 19px;
+}
+.line-through-price {
+  margin-top: auto;
+  font-size: 12px;
+  text-decoration: line-through;
+  margin-bottom: 20px;
 }
