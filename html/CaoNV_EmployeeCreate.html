@@ -44,16 +44,18 @@
               <h2>Sửa thông tin nhân viên</h2>
             </legend>
             <div class="row">
-              <div class="col-4 p-2">
+              <!-- employeeCode  -->
+              <div class="col-2 p-2">
                 <label>Mã nhân viên</label>
               </div>
-              <div class="col-8">
+              <div class="col-4">
                 <span class="text-black-50 form-control mt-2">NV028</span>
               </div>
-              <div class="col-4 p-2">
-                <label>Tên nhân viên <sup>*</sup></label>
+              <!-- employeeName  -->
+              <div class="col-2 p-2">
+                <label>Tên nhân viên <sup style="color: red">*</sup></label>
               </div>
-              <div class="col-8">
+              <div class="col-4">
                 <input
                   class="form-control border border-dark mt-2"
                   type="text"
@@ -62,10 +64,11 @@
                   <small style="color: red">error</small>
                 </div>
               </div>
-              <div class="col-4 p-2">
-                <label>Địa chỉ <sup>*</sup></label>
+              <!-- Address  -->
+              <div class="col-2 p-2">
+                <label>Địa chỉ <sup style="color: red">*</sup></label>
               </div>
-              <div class="col-8">
+              <div class="col-4">
                 <input
                   class="form-control border border-dark mt-2"
                   type="text"
@@ -74,10 +77,11 @@
                   <small style="color: red">error</small>
                 </div>
               </div>
-              <div class="col-4 p-2">
-                <label>Số điện thoại <sup>*</sup></label>
+              <!-- phone  -->
+              <div class="col-2 p-2">
+                <label>Số điện thoại <sup style="color: red">*</sup></label>
               </div>
-              <div class="col-8">
+              <div class="col-4">
                 <input
                   class="form-control border border-dark mt-2"
                   type="text"
@@ -86,10 +90,11 @@
                   <small style="color: red">error</small>
                 </div>
               </div>
-              <div class="col-4 p-2">
-                <label>Tên tài khoản <sup>*</sup></label>
+              <!-- Account  -->
+              <div class="col-2 p-2">
+                <label>Tên tài khoản <sup style="color: red">*</sup></label>
               </div>
-              <div class="col-8">
+              <div class="col-4">
                 <input
                   class="form-control border border-dark mt-2"
                   type="text"
@@ -98,11 +103,11 @@
                   <small style="color: red">error</small>
                 </div>
               </div>
-
-              <div class="col-4 p-2">
+              <!-- image  -->
+              <div class="col-2 p-2">
                 <label>Ảnh nhân viên</label>
               </div>
-              <div class="col-8">
+              <div class="col-4">
                 <input
                   type="file"
                   class="form-control border border-dark mt-2 mb-4"
@@ -114,9 +119,9 @@
                   name="image"
                 />
               </div>
-
+              <!-- startDay  -->
               <div class="col-2 p-2">
-                <label>Ngày vào làm <sup>*</sup></label>
+                <label>Ngày vào làm <sup style="color: red">*</sup></label>
               </div>
               <div class="col-4">
                 <input
@@ -127,8 +132,9 @@
                   <small style="color: red">error</small>
                 </div>
               </div>
-              <div class="col-2 ps-4 p-2">
-                <label>Ngày sinh <sup>*</sup></label>
+              <!-- birthDay  -->
+              <div class="col-2 p-2">
+                <label>Ngày sinh <sup style="color: red" >*</sup></label>
               </div>
               <div class="col-4">
                 <input
@@ -139,9 +145,9 @@
                   <small style="color: red">error</small>
                 </div>
               </div>
-
+              <!-- idCart  -->
               <div class="col-2 p-2">
-                <label>CCCD <sup>*</sup></label>
+                <label>CCCD <sup style="color: red">*</sup></label>
               </div>
               <div class="col-4">
                 <input
@@ -152,8 +158,35 @@
                   <small style="color: red">error</small>
                 </div>
               </div>
-              <div class="col-2 ps-4 p-2">
-                <label>Công việc <sup>*</sup></label>
+              <!-- email  -->
+               <div class="col-2 p-2">
+                <label>Email <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <input
+                  class="form-control border border-dark mt-2"
+                  type="text"
+                />
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- gender  -->
+                <div class="col-2  p-2">
+                <label>Giới tính <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <select class="form-select border border-dark mt-2">
+                  <option value="1">Nam</option>
+                  <option value="2">Nữ</option>
+                </select>
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- job  -->
+              <div class="col-2  p-2">
+                <label>Công việc <sup style="color: red">*</sup></label>
               </div>
               <div class="col-4">
                 <select class="form-select border border-dark mt-2">
@@ -165,24 +198,28 @@
                   <small style="color: red">error</small>
                 </div>
               </div>
-              <div class="col-4 p-2 mt-3">
-                <span
-                  >(<span style="color: red">*</span>) Thông tin bắt buộc</span
-                >
-              </div>
-              <div class="col-8 mt-3">
+            </div>
+            <div class="row">
+                   <!-- button  -->
+              <div class="col-3 p-2 mt-3">
                 <a href="PhuocLQ_EmployeeList.html">
                   <button
                     class="btn btn-outline-secondary float-end mx-1 mt-2 shadow"
                   >
-                    Trở về
+                    Thoát
                   </button>
                 </a>
                 <button
                   class="btn btn-outline-primary float-end mx-1 mt-2 shadow"
                 >
-                  Hoàn tất
+                 Lưu
                 </button>
+              </div>
+              <!-- information  -->
+              <div class="col-9 p-4 float-end">
+                <span class="float-end"
+                  >(<span style="color: red">*</span>) Thông tin bắt buộc</span
+                >
               </div>
             </div>
           </fieldset>
