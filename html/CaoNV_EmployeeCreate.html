@@ -264,6 +264,162 @@
                         </div>
                     </div>
                 </div>
+
+              </div>
+              <!-- Address  -->
+              <div class="col-2 p-2">
+                <label>Địa chỉ <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <input
+                  class="form-control border border-dark mt-2"
+                  type="text"
+                />
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- phone  -->
+              <div class="col-2 p-2">
+                <label>Số điện thoại <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <input
+                  class="form-control border border-dark mt-2"
+                  type="text"
+                />
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- Account  -->
+              <div class="col-2 p-2">
+                <label>Tên tài khoản <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <input
+                  class="form-control border border-dark mt-2"
+                  type="text"
+                />
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- image  -->
+              <div class="col-2 p-2">
+                <label>Ảnh nhân viên</label>
+              </div>
+              <div class="col-4">
+                <input
+                  type="file"
+                  class="form-control border border-dark mt-2 mb-4"
+                  aria-describedby="inputGroupFileAddon03"
+                  aria-label="Upload"
+                  accept="image/png, image/gif, image/jpeg"
+                  ref="{inputFileRef}"
+                  onChange="{handleInputChange}"
+                  name="image"
+                />
+              </div>
+              <!-- startDay  -->
+              <div class="col-2 p-2">
+                <label>Ngày vào làm <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <input
+                  class="form-control border border-dark mt-2"
+                  type="date"
+                />
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- birthDay  -->
+              <div class="col-2 p-2">
+                <label>Ngày sinh <sup style="color: red" >*</sup></label>
+              </div>
+              <div class="col-4">
+                <input
+                  class="form-control border border-dark mt-2"
+                  type="date"
+                />
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- idCart  -->
+              <div class="col-2 p-2">
+                <label>CCCD <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <input
+                  class="form-control border border-dark mt-2"
+                  type="text"
+                />
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- email  -->
+               <div class="col-2 p-2">
+                <label>Email <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <input
+                  class="form-control border border-dark mt-2"
+                  type="text"
+                />
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- gender  -->
+                <div class="col-2  p-2">
+                <label>Giới tính <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <select class="form-select border border-dark mt-2">
+                  <option value="1">Nam</option>
+                  <option value="2">Nữ</option>
+                </select>
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+              <!-- job  -->
+              <div class="col-2  p-2">
+                <label>Công việc <sup style="color: red">*</sup></label>
+              </div>
+              <div class="col-4">
+                <select class="form-select border border-dark mt-2">
+                  <option value="1">Nhân viên kinh doanh</option>
+                  <option value="2">Nhân viên bán hàng</option>
+                  <option value="2">Thủ kho</option>
+                </select>
+                <div style="height: 16px">
+                  <small style="color: red">error</small>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                   <!-- button  -->
+              <div class="col-3 p-2 mt-3">
+                <a href="PhuocLQ_EmployeeList.html">
+                  <button
+                    class="btn btn-outline-secondary float-end mx-1 mt-2 shadow"
+                  >
+                    Trở về
+                  </button>
+                </a>
+                <button
+                  class="btn btn-outline-primary float-end mx-1 mt-2 shadow"
+                >
+                 Lưu
+                </button>
+              </div>
+              <!-- information  -->
+              <div class="col-9 p-4 float-end">
+
                 <div class="row">
                     <!-- button  -->
                     <div class="col-3 p-2 mt-3">
@@ -282,6 +438,7 @@
                     </div>
                     <!-- information  -->
                     <div class="col-9 p-4 float-end">
+
                 <span class="float-end"
                 >(<span style="color: red">*</span>) Thông tin bắt buộc</span
                 >
