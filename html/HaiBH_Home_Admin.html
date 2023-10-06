@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .card-body-order-number {
+            flex: 1 1 auto;
+            padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+            color: white;
+            min-height: 150px;
+            background-color: #3ea4ed;
+            font-size: 35px;
+        }
+        .card-body-revenue {
+            flex: 1 1 auto;
+            padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+            color: white;
+            min-height: 150px;
+            background-color: #f3d652;
+            font-size: 35px;
+        }
+        .card-body-targets {
+            flex: 1 1 auto;
+            padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+            color: white;
+            min-height: 150px;
+            background-color: #ff7a81;
+            font-size: 35px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; top: 0; z-index: 9999">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="HaiBH_Home_Admin.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="NguyenNH_customer_management.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="PhuocLQ_EmployeeList.html">Quản Lý Nhân Viên</a></li>
+                        <li><a class="dropdown-item" href="NguyenNH_customer_management.html">Quản Lý Báo Cáo Khách Hàng</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Kinh Doanh
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="LoiVT_SalesReport.html">Quản Lý Báo Cáo Doanh Thu</a></li>
+                        <li><a class="dropdown-item" href="QuanND_Product_List.html">Xem Thông Tin Hàng Hoá</a></li>
+                        <li><a class="dropdown-item" href="ThienPT_supplierList.html">Quản Lý Nhà Cung Cấp</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="ThoiND_sale_management.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Bán Hàng
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="ThoiND_sale_management.html">Quản Lý Bán Hàng</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="PhapTM_warehouse.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Thủ Kho
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="PhapTM_warehouse.html">Quản Lý Xuất/Nhập Kho</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" style="margin-left: auto; width: 0">
+            <ul class="navbar-nav" style="margin-left: auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="HaiBH_Infomation.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Bùi Hữu Hải - Admin
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="HaiBH_Infomation.html">Thông Tin Cá Nhân</a></li>
+                        <li><a class="dropdown-item" href="HaiBH_Login.html">Đăng Xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body-order-number">
+                    <h5 class="card-title">Số đơn bán trong ngày</h5>
+                    <p class="card-text">100.000.000 VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body-revenue">
+                    <h5 class="card-title">Doanh thu trong ngày</h5>
+                    <p class="card-text">100.000.000 VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body-targets">
+                    <h5 class="card-title">Chỉ tiêu tháng</h5>
+                    <p class="card-text">100.000.000 VND</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-8">
+            <canvas id="lineChart"></canvas>
+        </div>
+        <div class="col-md-4">
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Data for line chart
+    const lineChartData = {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+        datasets: [
+            {
+                label: 'Số đơn bán',
+                data: [50, 60, 70, 80, 90],
+                borderColor: 'pink',
+                fill: false,
+            },
+            {
+                label: 'Doanh thu',
+                data: [200, 250, 300, 350, 400],
+                borderColor: '#3ea4ed',
+                fill: false,
+            },
+        ],
+    };
+
+    // Data for pie chart
+    const pieChartData = {
+        labels: ['Doanh thu đã đạt được', 'Chưa đạt chỉ tiêu'],
+        datasets: [
+            {
+                data: [800, 200],
+                backgroundColor: ['#3ea4ed', 'pink'],
+            },
+        ],
+    };
+
+    // Create line chart
+    const lineChartCtx = document.getElementById('lineChart').getContext('2d');
+    const lineChart = new Chart(lineChartCtx, {
+        type: 'line',
+        data: lineChartData,
+    });
+
+    // Create pie chart
+    const pieChartCtx = document.getElementById('pieChart').getContext('2d');
+    const pieChart = new Chart(pieChartCtx, {
+        type: 'pie',
+        data: pieChartData,
+    });
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+</html>
