@@ -10,17 +10,11 @@
             crossorigin="anonymous"></script>
     <style>
 
-
-        .form-control {
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-            height: auto;
-        }
         .info {
             margin-left: 10%;
         }
 
-        .bottom {
+        .bottom-HN {
             display: flex;
             align-content: center;
         }
@@ -35,7 +29,8 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; top: 0; z-index: 9999">
+
     <div class="container-fluid">
         <a class="navbar-brand" href="HaiBH_Home_Admin.html">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
@@ -109,37 +104,37 @@
     </div>
 </nav>
 <div class="container-fluid">
-    <div class="my-5">
-        <fieldset class="form-input shadow mx-auto" style="border-radius: 20px; border: 1px solid black; height: auto; width: 40%">
+    <div class="my-5 pt-5">
+        <fieldset class="form-input shadow mx-auto" style="border-radius: 20px; border: 1px solid black; height: auto; width: 40%;padding: 20px">
             <legend class="float-none w-auto px-3">Thông tin khách hàng</legend>
             <table class="info">
                 <tr>
                     <td>Tên khách hàng</td>
-                    <td style="padding-left: 20px;">Nguyễn Nữ</td>
+                    <td style="padding-left: 40px;">Nguyễn Nữ</td>
                 </tr>
                 <tr>
                     <td>Giới tính</td>
-                    <td style="padding-left: 20px;">Nữ</td>
+                    <td style="padding-left: 40px;">Nữ</td>
                 </tr>
                 <tr>
                     <td>Số điện thoại</td>
-                    <td style="padding-left: 20px;">0123456789</td>
+                    <td style="padding-left: 40px;">0123456789</td>
                 </tr>
                 <tr>
                     <td>Tuổi</td>
-                    <td style="padding-left: 20px;">20</td>
+                    <td style="padding-left: 40px;">20</td>
                 </tr>
                 <tr>
                     <td>Email</td>
-                    <td style="padding-left: 20px;">nguyennu@gmail.com</td>
+                    <td style="padding-left: 40px;">nguyennu@gmail.com</td>
                 </tr>
                 <tr>
                     <td>Địa chỉ</td>
-                    <td style="padding-left: 20px;">Đà nẵng</td>
+                    <td style="padding-left: 40px;">Đà Nẵng</td>
                 </tr>
                 <tr>
                     <td>Số lần mua hàng</td>
-                    <td style="padding-left: 20px;">9</td>
+                    <td style="padding-left: 40px;">9</td>
                 </tr>
             </table>
         </fieldset>
@@ -149,8 +144,8 @@
                 <h3>Chi tiết lịch sử mua hàng</h3>
             </div>
             <div class="col-12 d-flex justify-content-end my-3">
-                <div class="col-auto mx-1">
-                    <input class="form-control" type="search" placeholder="tìm theo tên" aria-label="Search">
+                <div class="col-auto mx-2">
+                    <input class="form-control" type="search" placeholder="Tìm theo tên" aria-label="Search">
                 </div>
                 <div class="col-auto">
                     <button class="btn btn-outline-primary text-center" type="button">Tìm kiếm</button>
@@ -203,10 +198,10 @@
         <div class="container mt-3">
             <div class="row">
                 <div class="col-auto ms-auto">
-                    <nav class="bottom" aria-label="Page navigation">
+                    <nav class="bottom-HN" aria-label="Page navigation">
                         <ul class="pagination mb-0 me-2">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trước</a>
+                            <li class="page-item ">
+                                <a class="page-link" href="#">Trước</a>
                             </li>
                             <li class="page-item" aria-current="page">
                                 <a class="page-link" href="#">1/10</a>
@@ -216,7 +211,7 @@
                             </li>
                         </ul>
                         <a href="NguyenNH_customer_management.html">
-                            <button class="btn btn-outline-primary me-4 text-center" type="button">Quay lại</button>
+                            <button class="btn btn-outline-primary text-center" type="button">Trở về</button>
                         </a>
                     </nav>
                 </div>
